@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'b'; /*a name to be used later*/
+  src: url('../fonts/Futura_Std_Light/Futura-Std-Light.otf') format('otf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: "a"; /*a name to be used later*/
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('ttf'); /*URL to font*/
+}
 html {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +25,7 @@ body {
   font-size: 100%;
   vertical-align: baseline;
   background: #000000;
-  font-family: "b";
+  font-family: 'b';
   line-height: 1.5;
   overflow-x: hidden;
   touch-action: auto;
@@ -37,7 +46,7 @@ body {
 p {
   font-size: 17px;
   font-weight: 600;
-  font-family: "a";
+  font-family: 'a';
   color: #a6a7aa;
   line-height: 1.4;
   margin-bottom: 15px;
@@ -47,25 +56,25 @@ p {
 em {
   font-size: 16px;
   font-weight: 500;
-  font-family: "b";
+  font-family: 'b';
   color: #a6a7aa;
 }
 
 li {
   font-size: 16px;
   font-weight: 500;
-  font-family: "b";
+  font-family: 'b';
   color: #a6a7aa;
 }
 li a {
   font-size: 16px;
   font-weight: 500;
-  font-family: "b";
+  font-family: 'b';
   color: #a6a7aa;
 }
 
 a {
-  font-family: "b";
+  font-family: 'b';
   color: #81848f;
   outline: 0;
 }
@@ -101,7 +110,7 @@ a:active {
 span {
   font-size: 14px;
   font-weight: 400;
-  font-family: "b";
+  font-family: 'b';
   color: #ffffff;
 }
 
@@ -113,7 +122,7 @@ h5,
 h6 {
   /* font-weight: 700; */
   font-weight: 700;
-  font-family: "b";
+  font-family: 'b';
   color: #eb8908;
   line-height: 1.4;
   margin: 0 0 14px;
@@ -205,7 +214,7 @@ h4 {
   position: relative;
   font-size: 17px;
   font-weight: 400;
-  font-family: "b";
+  font-family: 'b';
   color: #a6a7aa;
   line-height: 1.4;
   border-left: none;
@@ -2205,7 +2214,7 @@ iframe {
 ----------------------------------------------------*/
 .contacts {
   text-decoration: none;
-  font-family: "b";
+  font-family: 'b';
   font-weight: 100;
   margin: 20px 10px;
   line-height: 60px;
@@ -2276,7 +2285,7 @@ li.linkcoin-whitepaper {
 ----------------------------------------------------*/
 .sub {
   text-decoration: none;
-  font-family: "b";
+  font-family: 'b';
   font-weight: 100;
   margin: 20px 10px;
   line-height: 60px;
