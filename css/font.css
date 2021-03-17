@@ -1,9 +1,9 @@
 @font-face {
   font-family: "b"; /*a name to be used later*/
-  src: url("../fonts/Abel/Abel-Regular.ttf"); /*URL to font*/
+  src: url('../fonts/Futura_Std_Light/Futura-Std-Light.otf') format('otf'); /*URL to font*/
 }
 
 @font-face {
   font-family: "a"; /*a name to be used later*/
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); /*URL to font*/
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('ttf'); /*URL to font*/
 }

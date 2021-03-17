@@ -391,7 +391,7 @@ var Layout = function () {
             handleHeaderOnScroll(); // initial setup for fixed header
             handleCarousel(); // initial setup for carousel
             handleHeight(); // initial setup for group element height
-            handleCube(); //canvas initialisation
+            // handleCube(); //canvas initialisation
             handleData();
             handleVideo();
             handlePie(); //piechart initialisation
