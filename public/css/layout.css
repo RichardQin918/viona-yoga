@@ -1,12 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "FSL"; /*a name to be used later*/
-  src: url('../fonts/Futura_Std_Light/Futura-Std-Light.otf') format('otf'); /*URL to font*/
-}
-
-@font-face {
-  font-family: "a"; /*a name to be used later*/
-  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('ttf'); /*URL to font*/
+  src: url('../fonts/Futura_Std/FuturaStdLight.woff') format('woff'); /*URL to font*/
 }
 html {
   overflow-x: hidden;
