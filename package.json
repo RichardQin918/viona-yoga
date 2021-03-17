@@ -1,0 +1,42 @@
+{
+  "name": "viona-yoga",
+  "version": "1.0.0",
+  "description": "Viona Yoga",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ./bin/www",
+    "stop": "pm2 delete all",
+    "dev": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesbit/swap-all-website.git"
+  },
+  "keywords": [
+    "swapall",
+    "defi"
+  ],
+  "author": "Richard Ziming Qin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RichardQin918/viona-yoga.git/issues"
+  },
+  "homepage": "https://github.com/RichardQin918/viona-yoga.git#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "cookie-parser": "~1.4.5",
+    "debug": "~4.3.1",
+    "ejs": "^3.1.5",
+    "express": "~4.17.1",
+    "http-errors": "~1.8.0",
+    "morgan": "~1.10.0",
+    "pm2": "^4.5.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
