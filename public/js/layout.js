@@ -155,10 +155,18 @@ var Layout = function () {
 
     // handle on page scroll
     var handleHeaderOnScroll = function () {
+        console.log('here!')
         if ($(window).scrollTop() > 60) {
             $('body').addClass('page-on-scroll');
+            // $('#bgd').removeClass('bg-filter')
+            // $('.logo-img').attr('src', 'img/logo/logo.png')
+            // $('.carousel-title').addClass('turn')
+
         } else {
             $('body').removeClass('page-on-scroll');
+            // $('#bgd').addClass('bg-filter')
+            // $('.logo-img').attr('src', 'img/logo/logo_white.png')
+            // $('.carousel-title').removeClass('turn')
         }
     }
 
@@ -294,7 +302,7 @@ var Layout = function () {
                     });
                 }
             });
-        }
+    }
 
     var handleVideo = function () {
         $(document).ready(function () {
@@ -387,7 +395,7 @@ var Layout = function () {
             handleCarousel(); // initial setup for carousel
             handleHeight(); // initial setup for group element height
             // handleCube(); //canvas initialisation
-            handleData();
+            // handleData();
             handleVideo();
             handlePie(); //piechart initialisation
             handleAnimation();

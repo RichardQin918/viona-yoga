@@ -27,6 +27,7 @@ app.use('/vendor',express.static(path.join(__dirname, 'public/js/vendor')))
 app.use('/bower_components',express.static(path.join(__dirname, 'public/js/bower_components')))
 app.use('/amcharts',express.static(path.join(__dirname, 'public/js/amcharts')))
 app.use('/css',express.static(path.join(__dirname, 'public/css')))
+app.use('/scss',express.static(path.join(__dirname, 'public/scss')))
 app.use('/public',express.static(path.join(__dirname, 'public')))
 
 
