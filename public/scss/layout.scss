@@ -621,6 +621,7 @@ fieldset[disabled] {
   padding: 15px 30px;
   border-radius: 10px;
 }
+/*
 .project-img {
   width: 300px;
   transition: width 0.5s, height 0.5s;
@@ -628,6 +629,7 @@ fieldset[disabled] {
     width: 310px;
   }
 }
+*/
 hr.style-one {
   border: solid 1px #7ba79d;
   width: 80%;
@@ -2879,4 +2881,22 @@ li.linkcoin-whitepaper {
     margin-left: -20px;
     margin-right: -20px;
   }
+}
+.pic-text{
+  margin: 15px 0;
+  display: block;
+}
+.pic-text:first-child{
+  float: left;
+}
+.pic-text img{
+  width: 50%;
+  transition: transform 0.5s;
+  &:hover{
+    transform: scale(1.30);
+    overflow: hidden;
+  }
+}
+.text{
+  margin-top: 10%;
 }
