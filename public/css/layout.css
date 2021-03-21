@@ -281,7 +281,7 @@ span {
 h1 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px;
   font-size: 40px; }
@@ -296,7 +296,7 @@ h1 {
 h2 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px;
   font-size: 35px; }
@@ -311,7 +311,7 @@ h2 {
 h3 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px;
   font-size: 22px; }
@@ -326,7 +326,7 @@ h3 {
 h4 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px;
   font-size: 22px; }
@@ -341,7 +341,7 @@ h4 {
 h5 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px; }
   h5 > a {
@@ -355,7 +355,7 @@ h5 {
 h6 {
   font-weight: 700;
   font-family: 'FSL';
-  color: #9db8b1;
+  color: #7ba79d;
   line-height: 1.4;
   margin: 0 0 14px; }
   h6 > a {
@@ -563,7 +563,7 @@ fieldset[disabled] .btn-theme {
     width: 310px; }
 
 hr.style-one {
-  border: solid 1px #9db8b1;
+  border: solid 1px #7ba79d;
   width: 80%;
   margin-top: 20px;
   margin-bottom: 50px; }
@@ -706,7 +706,7 @@ hr.style-one {
   max-height: 100%; }
 
 .bounty {
-  color: #9db8b1 !important;
+  color: #7ba79d !important;
   font-weight: bolder !important; }
 
 .header {
@@ -870,7 +870,7 @@ hr.style-one {
       display: none; }
 
 .page-on-scroll .header .navbar {
-  background: #9db8b1;
+  background: #7ba79d;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
@@ -897,7 +897,7 @@ hr.style-one {
   border: none; }
 
 .page-on-scroll .nav-item-hover:after {
-  background: #9db8b1; }
+  background: #7ba79d; }
 
 #particle-canvas {
   width: auto;
@@ -911,7 +911,7 @@ hr.style-one {
     color: #a6a7aa;
     transition: color ease-in-out 0.3s, width ease-in-out 0.3s, height ease-in-out 0.3s; }
     .icon-wrapper .logo:hover {
-      color: #9db8b1;
+      color: #7ba79d;
       width: 110px;
       height: 110px;
       transition: color ease-in-out 0.3s, width ease-in-out 0.3s, height ease-in-out 0.3s; }
@@ -990,7 +990,7 @@ hr.style-one {
   width: 100%;
   min-width: 100px;
   line-height: 1.25;
-  color: #9db8b1;
+  color: #7ba79d;
   background-color: #fff;
   background-clip: padding-box;
   border-radius: 5px;
@@ -1044,7 +1044,7 @@ hr.style-one {
   filter: brightness(0.1); }
 
 .turn {
-  color: #9db8b1 !important; }
+  color: #7ba79d !important; }
 
 #title-responsive {
   display: none; }
@@ -1224,7 +1224,7 @@ hr.style-one {
   max-width: 90%;
   width: 1150px; }
   .container h2 {
-    color: #9db8b1;
+    color: #7ba79d;
     letter-spacing: 5px; }
 
 .container-full-width {
@@ -1525,14 +1525,14 @@ iframe {
 .footer {
   background-color: #000000; }
   .footer h3 {
-    border-bottom: 1px solid #9db8b1;
+    border-bottom: 1px solid #7ba79d;
     margin-bottom: 20px;
     min-width: 100px;
     overflow: hidden;
     text-transform: uppercase; }
   .footer h4 {
     max-width: 300px;
-    border-bottom: 1px solid #9db8b1;
+    border-bottom: 1px solid #7ba79d;
     margin-bottom: 20px;
     min-width: 100px;
     overflow: hidden;
@@ -1560,7 +1560,7 @@ iframe {
     .footer ul li a.tag {
       border-bottom: solid thin transparent; }
       .footer ul li a.tag:hover {
-        border-bottom: solid thin #9db8b1;
+        border-bottom: solid thin #7ba79d;
         transition: all ease 0.5s; }
 
 .contacts {
@@ -1573,7 +1573,7 @@ iframe {
   .contacts h4 {
     display: none;
     max-width: 300px;
-    border-bottom: 1px solid #9db8b1;
+    border-bottom: 1px solid #7ba79d;
     margin-bottom: 20px;
     min-width: 100px;
     overflow: hidden;
@@ -1600,7 +1600,7 @@ iframe {
       border-radius: 8px;
       transition: transform 0.3s; }
       .contact-list li .logo:hover {
-        color: #9db8b1;
+        color: #7ba79d;
         transform: scale(1.5); }
 
 li.linkcoin-whitepaper {
@@ -1615,7 +1615,7 @@ li.linkcoin-whitepaper {
   text-align: center; }
   .sub h4 {
     display: none;
-    color: #9db8b1;
+    color: #7ba79d;
     margin-bottom: 20px;
     min-width: 100px;
     overflow: hidden; }
@@ -1681,7 +1681,7 @@ li.linkcoin-whitepaper {
     max-width: 4em;
     clear: both;
     margin: 1em auto 2em;
-    color: #9db8b1;
+    color: #7ba79d;
     text-align: center; }
     .timeline .year:first-of-type {
       margin-top: 0; }
@@ -1700,11 +1700,11 @@ li.linkcoin-whitepaper {
       margin-top: 10px;
       max-width: 100%; }
     .timeline .event:hover .content {
-      background: #9db8b1; }
+      background: #7ba79d; }
       .timeline .event:hover .content p {
         color: #fff; }
     .timeline .event:hover:after {
-      background: #9db8b1;
+      background: #7ba79d;
       border: none; }
     .timeline .event::after {
       content: "";
@@ -1751,14 +1751,14 @@ li.linkcoin-whitepaper {
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
       opacity: 0;
-      background-color: #9db8b1; }
+      background-color: #7ba79d; }
     .faq-line .active .accordion-icon .v {
       transition: all 0.5s ease-in-out;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
-      background-color: #9db8b1; }
+      background-color: #7ba79d; }
   .faq-line .active .faq-q p {
-    color: #9db8b1; }
+    color: #7ba79d; }
   .faq-line .active .faq-a {
     max-height: 500px; }
 
@@ -1833,7 +1833,7 @@ li.linkcoin-whitepaper {
   #team .member-wrapper .member-intro {
     padding: 30px; }
     #team .member-wrapper .member-intro .member-title {
-      color: #9db8b1; }
+      color: #7ba79d; }
   #team .member-wrapper .square {
     border-radius: 50%;
     border: 1.8px solid #fff; }
@@ -1848,7 +1848,7 @@ li.linkcoin-whitepaper {
   #news .news-wrapper .news-intro {
     display: inline-block; }
     #news .news-wrapper .news-intro .news-title {
-      color: #9db8b1; }
+      color: #7ba79d; }
 
 #news .news-source {
   border-bottom: 3px solid #7a287b;
@@ -1949,7 +1949,7 @@ li.linkcoin-whitepaper {
   .career-ben {
     text-align: left; }
   .career-con {
-    color: #9db8b1;
+    color: #7ba79d;
     font-weight: 600;
     margin-top: 20px;
     letter-spacing: 2px; }
@@ -2294,7 +2294,7 @@ li.linkcoin-whitepaper {
     width: 100%;
     min-width: 100px;
     line-height: 1.25;
-    color: #9db8b1;
+    color: #7ba79d;
     background-color: #fff;
     background-clip: padding-box;
     border-radius: 5px;
@@ -2345,7 +2345,7 @@ li.linkcoin-whitepaper {
     margin-right: 40px;
     font-size: 22px; }
   .career-con {
-    color: #9db8b1;
+    color: #7ba79d;
     font-weight: 600;
     margin-left: -10px;
     margin-right: -10px;
