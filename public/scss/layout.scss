@@ -21,7 +21,7 @@ body {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: #eeeeee;
+  background: #ffffff;
   font-family: 'FSL';
   line-height: 1.5;
   overflow-x: hidden;
@@ -452,7 +452,7 @@ hr.style-one {
   border: solid 1px #7ba79d;
   width: 80%;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .alignright {
   display: flex;
@@ -2003,7 +2003,7 @@ iframe {
   .intro {
     >p {
       font-size: 25px;
-      margin-top: 50px;
+      margin-top: 20px;
       margin-bottom: 50px;
       line-height: 2;
       letter-spacing: 2px;
@@ -2742,12 +2742,11 @@ iframe {
     }
   }
   img {
-    width: 500px;
+    width: 100%;
   }
 }
 
 .how {
-  padding: 50px;
   justify-content: center;
   .how-content {
     text-align: left;
@@ -2766,10 +2765,90 @@ iframe {
   }
 
   .how-card {
-    padding: 100px;
+    padding: 10px;
+    .me {
+      padding-top: 15px;
+    }
+    .card-title {
+      font-size: 25px;
+    }
+    .card-body {
+      padding-left: 30px;
+      padding-right: 30px;
+      min-height: 160px;
+      .card-text {
+        letter-spacing: 3px;
+        line-height: 30px;
+      }
+    }
     .card-img-top {
-      width: 70%;
+      width: 80%;
     }
   }
+}
 
+#how {
+  background-color: #eeeeee;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/* -- Form -- */
+.section-form{
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #a6a7aa;
+}
+.section-form h2{
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.contact-form{
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #7ba79d;
+}
+textarea{
+  height: 100px;
+}
+input[type=checkbox]{
+  margin: 10px 15px 10px 0;
+}
+*:focus{outline: none;}
+
+//submit
+input[type=submit]{
+    display: inline-block;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 15px;
+    background-color: #7ba79d;
+    border: 1px solid #7ba79d;
+    color: #fff;
+    transition: transform 0.5s, color 0.5s;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #597e75;
+    transform: scale(1.10);
 }
