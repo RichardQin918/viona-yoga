@@ -1050,7 +1050,7 @@ hr.style-one {
   height: auto; }
 
 .container {
-  max-width: 90%; }
+  width: 1150px; }
   .container h2 {
     color: #7ba79d;
     letter-spacing: 5px; }
@@ -2241,11 +2241,21 @@ iframe {
 .why img {
   width: 500px; }
 
-.how .how-content {
-  text-align: left;
-  margin-top: 2%; }
-  .how .how-content .about-title {
+.how {
+  padding: 50px;
+  justify-content: center; }
+  .how .how-content {
+    text-align: left;
+    margin-top: 2%; }
+  .how .how-content-right {
+    text-align: right;
+    margin-top: 2%; }
+  .how .about-title {
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 2px;
     max-width: 700px; }
+  .how .how-card {
+    padding: 100px; }
+    .how .how-card .card-img-top {
+      width: 70%; }

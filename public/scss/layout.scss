@@ -1242,8 +1242,7 @@ hr.style-one {
   height: auto;
 }
 .container {
-  max-width: 90%;
-  //width: 1150px;
+  width: 1150px;
   h2 {
     color: #7ba79d;
     letter-spacing: 5px;
@@ -2748,15 +2747,29 @@ iframe {
 }
 
 .how {
+  padding: 50px;
+  justify-content: center;
   .how-content {
     text-align: left;
     margin-top: 2%;
+  }
 
-    .about-title {
-      font-size: 32px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      max-width: 700px;
+  .how-content-right {
+    text-align: right;
+    margin-top: 2%;
+  }
+  .about-title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    max-width: 700px;
+  }
+
+  .how-card {
+    padding: 100px;
+    .card-img-top {
+      width: 70%;
     }
   }
+
 }
