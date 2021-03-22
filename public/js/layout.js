@@ -1,3 +1,4 @@
+const BASE_URL = 'https://swapall.io/';
 var Layout = function () {
     'use strict';
 
@@ -155,13 +156,11 @@ var Layout = function () {
 
     // handle on page scroll
     var handleHeaderOnScroll = function () {
-        console.log('here!')
         if ($(window).scrollTop() > 60) {
             $('body').addClass('page-on-scroll');
             // $('#bgd').removeClass('bg-filter')
             // $('.logo-img').attr('src', 'img/logo/logo.png')
             // $('.carousel-title').addClass('turn')
-
         } else {
             $('body').removeClass('page-on-scroll');
             // $('#bgd').addClass('bg-filter')
@@ -230,18 +229,6 @@ var Layout = function () {
                 $(parent.attr('data-related')).css('height', parent.height());
             }
         });
-    }
-
-    var handleCube = function () {
-        var canvasDiv = document.getElementById('particle-canvas');
-        var options = {
-            //   particleColor: '#888',
-            background: './img/bgd.jpg',
-            //   interactive: true,
-            //   speed: 'slow',
-            //   density: 'high'
-        };
-        var particleCanvas = new ParticleNetwork(canvasDiv, options);
     }
 
     var handleData = function () {
@@ -322,54 +309,6 @@ var Layout = function () {
         });
     }
 
-    var handlePie = function () {
-        var pieChart = AmCharts.makeChart("pieChart", {
-            "type": "pie",
-            "theme": "black",
-            "labelRadius": -35,
-            "fontSize": 14,
-            "labelText": "[[percents]]%",
-            "dataProvider": [{
-                "group": "Overnight Interests",
-                "token": 60,
-                "showInLegend": true
-            }, {
-                "group": "Transaction Fee",
-                "token": 40,
-                "showInLegend": true
-            }],
-            "valueField": "token",
-            "titleField": "group",
-            //"descriptionField": "value",
-            "outlineAlpha": 0.4,
-            "depth3D": 15,
-            "balloonText": "[[title]]<br><span style='font-size:14px; color:#000000'><b style='color:#000000'>[[value]]</b> </span>",
-            "angle": 30,
-            "export": {
-                "enabled": false
-            },
-            "hideCredits": true,
-            "marginTop": 0,
-            "visibleInLegendField": "showInLegend",
-            "legend": {
-                "enabled": true,
-                "markerType": "circle",
-                "markerColor": "transparent",
-                "align": "center",
-                "width": 100,
-                "divId": "legendDiv",
-                "valueWidth": 20,
-                "spacing": 0
-            },
-            "percentFormatter": {
-                "precision": 0
-
-            },
-            "minRadius": 40,
-            "maxLabelWidth": 100,
-            "pullOutEffect": "bounce"
-        });
-    }
 
     var handleAnimation = function () {
         AOS.init();
@@ -389,18 +328,57 @@ var Layout = function () {
         $('.nav-scroll').localScroll();
     }
 
+    var handleFormSubmit = async function() {
+        $("#sub-form").submit(async function (event) {
+            var formData = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                textContent: $("#text-content").val(),
+            };
+            let res
+            try {
+                res = await request('POST', '/subscribe', formData)
+            } catch (err) {
+                console.log('failed to register: ', err)
+                res = err
+            }
+            if (res.success) {
+                if (window.location.href.includes('-en')) {
+                    window.location.replace('/success-en?newUser=' + newUser)
+                } else {
+                    window.location.replace('/success?newUser=' + newUser)
+                }
+            }
+
+            event.preventDefault();
+        });
+    }
+
+    async function request(method, url, args) {
+        return $.ajax({
+            url: url,
+            type: method,
+            data: JSON.stringify(args),
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (msg) {
+                return msg
+            },
+            error: function (err) {
+                return err
+            }
+        });
+    }
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
             handleCarousel(); // initial setup for carousel
             handleHeight(); // initial setup for group element height
-            // handleCube(); //canvas initialisation
-            // handleData();
             handleVideo();
-            handlePie(); //piechart initialisation
             handleAnimation();
             handleAccordion();
             handleScroll();
+            handleFormSubmit();
             // handle minimized header on page scroll
             $(window).scroll(function () {
                 handleHeaderOnScroll();
