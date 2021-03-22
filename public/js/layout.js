@@ -1,4 +1,4 @@
-const BASE_URL = 'https://viona-yoga.com';
+const BASE_URL = 'http://localhost:3000';
 var Layout = function () {
     'use strict';
 
@@ -330,6 +330,7 @@ var Layout = function () {
 
     var handleFormSubmit = async function() {
         $("#sub-form").submit(async function (event) {
+            event.preventDefault();
             var formData = {
                 name: $("#name").val(),
                 email: $("#email").val(),
@@ -343,14 +344,15 @@ var Layout = function () {
                 res = err
             }
             if (res.success) {
-                if (window.location.href.includes('-en')) {
-                    window.location.replace('/success-en?newUser=' + newUser)
-                } else {
-                    window.location.replace('/success?newUser=' + newUser)
-                }
+                alert('Your information has been collected, Thank you.')
+            } else {
+                alert('Please try again.')
             }
 
-            event.preventDefault();
+            $('#sub-form')[0].reset();
+
+
+
         });
     }
 
