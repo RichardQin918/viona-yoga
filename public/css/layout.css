@@ -878,7 +878,7 @@ hr.style-one {
 
 .carousel-title {
   font-weight: 700;
-  color: #000000;
+  color: #7ba79d;
   line-height: 2;
   text-transform: uppercase;
   letter-spacing: 15px;
@@ -887,7 +887,7 @@ hr.style-one {
 
 .carousel-subtitle {
   font-weight: 700;
-  color: #000000;
+  color: #7ba79d;
   line-height: 2;
   text-transform: uppercase;
   letter-spacing: 15px;
@@ -1805,7 +1805,7 @@ iframe {
     letter-spacing: 2px; }
   .intro-des {
     color: #a6a7aa;
-    font-size: 20px;
+    font-size: 26px;
     width: 500px;
     letter-spacing: 2px;
     line-height: 45px; }
