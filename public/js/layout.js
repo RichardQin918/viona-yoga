@@ -1,4 +1,4 @@
-const BASE_URL = 'https://swapall.io/';
+const BASE_URL = 'https://viona-yoga.com';
 var Layout = function () {
     'use strict';
 
@@ -337,7 +337,7 @@ var Layout = function () {
             };
             let res
             try {
-                res = await request('POST', '/subscribe', formData)
+                res = await request('POST', BASE_URL + '/subscribe', formData)
             } catch (err) {
                 console.log('failed to register: ', err)
                 res = err
