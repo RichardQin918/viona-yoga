@@ -718,7 +718,8 @@ hr.style-one {
   background: #7ba79d;
   transition-duration: 300ms;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  opacity: 0.9; }
 
 .page-on-scroll .header .logo-img-main {
   display: none;
