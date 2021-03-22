@@ -331,10 +331,18 @@ var Layout = function () {
     var handleFormSubmit = async function() {
         $("#sub-form").submit(async function (event) {
             event.preventDefault();
+            let experience = ''
+            let experiences = $('.form-check-input')
+            for (let i = 0; i< experiences.length; i++) {
+                if (experiences[i].checked) {
+                    experience = experiences[i].value
+                }
+            }
+
             var formData = {
                 name: $("#name").val(),
                 email: $("#email").val(),
-                textContent: $("#text-content").val(),
+                textContent: experience,
             };
             let res
             try {
@@ -350,9 +358,6 @@ var Layout = function () {
             }
 
             $('#sub-form')[0].reset();
-
-
-
         });
     }
 
