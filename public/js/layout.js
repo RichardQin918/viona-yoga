@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://viona-yoga.com';
 var Layout = function () {
     'use strict';
 
