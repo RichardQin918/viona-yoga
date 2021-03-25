@@ -2376,9 +2376,15 @@ iframe {
   }
 
   .location {
-    .project-img {
-      height: 350px;
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      .project-img {
+        height: 350px;
+        margin-bottom:15px;
+      }
     }
+
     .box-shadow {
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
@@ -3024,11 +3030,6 @@ iframe {
     margin-right: -25px;
     font-size: 15px;
   }
-  .intro-des {
-    color: #a6a7aa;
-    font-size: 20px;
-    width: 400px;
-  }
   .intro-title {
     font-size: 18px;
     letter-spacing: 10px;
@@ -3067,15 +3068,14 @@ iframe {
     }
     .intro-des {
       color: #a6a7aa;
-      font-size: 20px;
       letter-spacing: 2px;
-      line-height: 60px;
+      width: 100%;
+      font-size: 20px;
       .focus {
         color: #a6a7aa;
         font-size: 20px;
         letter-spacing: 2px;
-        line-height: 60px;
-        font-family: 'FSB';
+          font-family: 'FSB';
       }
     }
     img {
@@ -3103,13 +3103,12 @@ iframe {
       color: #a6a7aa;
       font-size: 20px;
       letter-spacing: 2px;
-      line-height: 60px;
+      width: 100%;
       .focus {
         color: #a6a7aa;
         font-size: 20px;
         letter-spacing: 2px;
-        line-height: 60px;
-        font-family: 'FSB';
+          font-family: 'FSB';
       }
     }
 
@@ -3312,7 +3311,7 @@ iframe {
 
   .location {
     .project-img {
-      width: 350px;
+      width: 100%;
     }
     .box-shadow {
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -3330,7 +3329,6 @@ iframe {
       font-size: 20px;
     }
     .location-des {
-      font-size: 25px !important;
       font-family: 'FSM' !important;
     }
     .intro-des {

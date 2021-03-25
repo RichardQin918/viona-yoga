@@ -1980,8 +1980,12 @@ iframe {
     transition-duration: 0s; } }
 
 @media screen and (min-width: 768px) {
-  .location .project-img {
-    height: 350px; }
+  .location .image-wrapper {
+    display: flex;
+    justify-content: center; }
+    .location .image-wrapper .project-img {
+      height: 350px;
+      margin-bottom: 15px; }
   .location .box-shadow {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
   .location .location-content {
@@ -2418,10 +2422,6 @@ iframe {
     margin-left: -25px;
     margin-right: -25px;
     font-size: 15px; }
-  .intro-des {
-    color: #a6a7aa;
-    font-size: 20px;
-    width: 400px; }
   .intro-title {
     font-size: 18px;
     letter-spacing: 10px; }
@@ -2450,14 +2450,13 @@ iframe {
       max-width: 700px; }
   .why .intro-des {
     color: #a6a7aa;
-    font-size: 20px;
     letter-spacing: 2px;
-    line-height: 60px; }
+    width: 100%;
+    font-size: 20px; }
     .why .intro-des .focus {
       color: #a6a7aa;
       font-size: 20px;
       letter-spacing: 2px;
-      line-height: 60px;
       font-family: 'FSB'; }
   .why img {
     width: 100%; }
@@ -2476,12 +2475,11 @@ iframe {
       color: #a6a7aa;
       font-size: 20px;
       letter-spacing: 2px;
-      line-height: 60px; }
+      width: 100%; }
       .how .intro-des .focus {
         color: #a6a7aa;
         font-size: 20px;
         letter-spacing: 2px;
-        line-height: 60px;
         font-family: 'FSB'; }
     .how img {
       width: 100%; }
@@ -2616,7 +2614,7 @@ iframe {
 
 @media screen and (max-width: 767px) {
   .location .project-img {
-    width: 350px; }
+    width: 100%; }
   .location .box-shadow {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
   .location h3 {
@@ -2630,7 +2628,6 @@ iframe {
     padding: 0px 20px 10px 20px;
     font-size: 20px; }
   .location .location-des {
-    font-size: 25px !important;
     font-family: 'FSM' !important; }
   .location .intro-des {
     font-size: 20px; }
