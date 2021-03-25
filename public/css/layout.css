@@ -17,6 +17,12 @@
   src: url("../fonts/Futura_Std/FuturaStdBold.woff") format("woff");
   /*URL to font*/ }
 
+@font-face {
+  font-family: "FSO";
+  /*a name to be used later*/
+  src: url("../fonts/Futura_Std/FuturaStdMediumOblique.woff") format("woff");
+  /*URL to font*/ }
+
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1); }
@@ -2016,7 +2022,10 @@ iframe {
     font-size: 20px;
     color: #a6a7aa;
     background-color: #ffffff;
-    padding: 80px 0; }
+    padding: 80px 0;
+    text-align: center; }
+    .section-schedule .note {
+      font-family: 'FSO'; }
   .section-schedule h2 {
     text-align: center;
     font-size: 32px;
@@ -2119,8 +2128,6 @@ iframe {
     .header .nav-item-hover:after {
       position: absolute;
       top: 19px; }
-    .header .logo-img-main {
-      margin-top: 11px; }
   .page-on-scroll .header .navbar {
     background: #7ba79d;
     transition-duration: 300ms;
@@ -2130,14 +2137,12 @@ iframe {
     display: none;
     transition-duration: 400ms;
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-    margin-top: 11px; }
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
   .page-on-scroll .header .logo-img-active {
     display: inline-block;
     transition-duration: 400ms;
     transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-    margin-top: 11px; }
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
   .page-on-scroll .header .nav-item-child {
     transition-duration: 300ms;
     transition-property: all;
@@ -2650,7 +2655,8 @@ iframe {
     font-size: 20px;
     color: #a6a7aa;
     background-color: #ffffff;
-    padding: 80px 0; }
+    padding: 80px 0;
+    text-align: center; }
   .section-schedule h2 {
     text-align: center;
     font-size: 32px;
