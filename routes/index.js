@@ -29,11 +29,11 @@ router.post('/subscribe', function(req, res, next) {
     })
         .then((result) => {
             console.log("Document successfully written!");
-            res.send(result)
+            res.send({success: true}).end()
         })
         .catch((error) => {
             console.error("Error writing document: ", error);
-            res.send(error)
+            res.send(400).end()
         });
 })
 
