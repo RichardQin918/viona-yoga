@@ -2170,7 +2170,7 @@ iframe {
       margin-top: 2%;
     }
 
-    .intro-des {
+    p {
       padding-right: 50px;
       color: #a6a7aa;
       font-size: 30px;
@@ -3481,6 +3481,95 @@ iframe {
   linear-gradient(-135deg, #88c4b6 190px, transparent 190px);
 }
 
+/* -- Membership -- */
+
+.section-membership{
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #a6a7aa;
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+//table
+table, th, td {
+  border: 1px solid #7ba79d;
+  //border-collapse: collapse;
+}
+
+table {
+  border-spacing: 5px;
+  margin: 30px 10%;
+
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  width: 25%;
+}
+
+.tr_1{
+  background-color: #7BA79D;
+  color: #fff;
+  font-weight: 800;
+}
+.tr_27{
+  background-color: #B0CAC4;
+  color: #fff;
+}
+/* -- Event -- */
+.section-event{
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #a6a7aa;
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-event table,
+.section-event th,
+.section-event td{
+  border: none;
+}
+
+.section-event img {
+  display: block;
+  margin: 5px 5px;
+  width: 95%;
+  height: auto;
+  box-shadow: 0 2px 2px #555;
+}
+
+.section-event p{
+  padding-left: 50px;
+  color: #a6a7aa;
+  font-size: 25px;
+  letter-spacing: 2px;
+  line-height: 155%;
+  width: 70%;
+  margin-left: 15%;
+}
+.section-event a{
+  text-decoration: none;
+  padding-bottom: 1px;
+  &:link,
+  &:visited{
+    color: #7ba79d;
+    border-bottom: 1px solid #7ba79d;
+    transition: border-bottom 0.2s, transform 0.2s;
+  }
+  &:hover,
+  &:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+  }
+}
 /* -- Form -- */
 .section-form{
   font-weight: 600;
@@ -3536,4 +3625,54 @@ input[type=submit]:hover,
 input[type=submit]:active{
     background-color: #597e75;
     transform: scale(1.10);
+}
+
+/*-- Queries --*/
+/* Big tablet to 1200px (widths smaller than the 1140 row)*/
+@media only screen and (max-width: 1200px){
+  
+}
+
+/* Small tablet to  big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+
+  .why p{
+    font-size: 22px;
+    line-height: 155%;
+    margin: 10px;
+    padding: 0%;
+  }
+
+  .how p{
+    font-size: 22px;
+    line-height: 155%;
+    margin: 10px;
+    padding: 0%;
+  }
+
+  .section-schedule h3{
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .section-membership{
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 60px 0;
+  }
+
+  .section-event p{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 155%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+}
+/* Small phone to  Small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+}
+/* Small phone from 0 to 480px */
+@media only screen and (max-width: 480px){
 }
