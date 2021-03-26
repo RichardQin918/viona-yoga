@@ -1418,10 +1418,11 @@ iframe {
         transition: all ease 0.5s; }
 
 .contacts {
+  background-color: #eeeeee;
   text-decoration: none;
   font-family: 'FSL';
   font-weight: 100;
-  margin: 20px 10px;
+  padding: 10px 10px;
   line-height: 60px;
   text-align: center; }
   .contacts h4 {
@@ -1986,27 +1987,29 @@ iframe {
     transition-duration: 0s; } }
 
 @media screen and (min-width: 768px) {
-  .location .image-wrapper {
-    display: flex;
-    justify-content: center; }
-    .location .image-wrapper .project-img {
-      height: 350px;
-      margin-bottom: 15px; }
-  .location .box-shadow {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
-  .location .location-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px; }
-    .location .location-content h3 {
-      font-size: 35px; }
-  .location .location-des {
-    font-size: 25px !important;
-    font-family: 'FSM' !important; }
-  .location .intro-des {
-    font-size: 20px;
-    line-height: 15px; }
+  .location {
+    margin-top: 50px; }
+    .location .image-wrapper {
+      display: flex;
+      justify-content: center; }
+      .location .image-wrapper .project-img {
+        height: 350px;
+        margin-bottom: 15px; }
+    .location .box-shadow {
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+    .location .location-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      .location .location-content h3 {
+        font-size: 35px; }
+    .location .location-des {
+      font-size: 25px !important;
+      font-family: 'FSM' !important; }
+    .location .intro-des {
+      font-size: 20px;
+      line-height: 15px; }
   /* RESUABLE COMPONENTS */
   .row {
     max-width: 1140px;
@@ -2021,7 +2024,7 @@ iframe {
     letter-spacing: 1.5px;
     font-size: 20px;
     color: #a6a7aa;
-    background-color: #ffffff;
+    background-color: #eeeeee;
     padding: 80px 0;
     text-align: center; }
     .section-schedule .note {
@@ -2618,28 +2621,30 @@ iframe {
     transition-duration: 0s; } }
 
 @media screen and (max-width: 767px) {
-  .location .project-img {
-    width: 100%; }
-  .location .box-shadow {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
-  .location h3 {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .location .location-content {
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px 10px 20px;
-    font-size: 20px; }
-  .location .location-des {
-    font-family: 'FSM' !important; }
-  .location .intro-des {
-    font-size: 20px; }
-  .location .image-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; }
+  .location {
+    margin-top: 50px; }
+    .location .project-img {
+      width: 100%; }
+    .location .box-shadow {
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+    .location h3 {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .location .location-content {
+      justify-content: center;
+      align-items: center;
+      padding: 0px 20px 10px 20px;
+      font-size: 20px; }
+    .location .location-des {
+      font-family: 'FSM' !important; }
+    .location .intro-des {
+      font-size: 20px; }
+    .location .image-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px; }
   /* RESUABLE COMPONENTS */
   .row {
     max-width: 1140px;
@@ -2774,7 +2779,7 @@ td {
   letter-spacing: 1.5px;
   font-size: 20px;
   color: #a6a7aa;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   padding: 80px 0;
   text-align: center; }
 
@@ -2893,3 +2898,12 @@ input[type=submit]:active {
 
 /* Small phone to  Small tablets: from 481px to 767px */
 /* Small phone from 0 to 480px */
+#adModal .modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none; }
+  #adModal .modal-content .modal-wrapper .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; }
