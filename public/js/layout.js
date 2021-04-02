@@ -378,13 +378,6 @@ var Layout = function () {
     }
 
     var handleAds = function() {
-        // $(window).on('resize', function () {
-        //     let height = $(window).height();
-        //     let width = $(window).width();
-        //     let size = Math.min(height, width)
-        //     $('#adModal img').css('height', size * 0.8)
-        //     $('#adModal img').css('width', size * 0.8)
-        // });
         $('#adModal').modal('show')
         setTimeout(function(){ $('#adModal').modal('hide'); }, 5000);
 
@@ -399,7 +392,7 @@ var Layout = function () {
             handleAccordion();
             handleScroll();
             handleFormSubmit();
-            handleAds();
+            // handleAds();
             // handle minimized header on page scroll
             $(window).scroll(function () {
                 handleHeaderOnScroll();
