@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -134,17 +134,17 @@
     </div>
     <nav class="header__navigation">
       <a href="#">
-        <img src="src/img/logo-white.png" alt="Logo" class="header__logo" />
+        <img src="src/img/new/logo.png" alt="Logo" class="header__logo" />
       </a>
       <ul class="menu">
         <li class="nav_item">
-          <a class="nav_link" href="#section-about">Yoga</a>
+          <a class="nav_link" href="#section-practice">Practice</a>
         </li>
         <li class="nav_item">
           <a class="nav_link" href="#section-practice">Viona</a>
         </li>
         <li class="nav_item">
-          <a class="nav_link" href="#section-event">Event</a>
+          <a class="nav_link" href="#section-event">Start Now</a>
         </li>
         <li class="nav_item">
           <input
@@ -176,6 +176,56 @@
       </ul>
     </nav>
     <header class="header">
+      <div class="slider">
+        <div class="slide">
+          <img
+                  srcset="
+                    src/img/nat-17.jpg       300w,
+                    src/img/nat-17-large.jpg 750w
+                  "
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 17"
+                  class="introduce__box__pic"
+                  src="src/img/nat-17-large.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img
+                  srcset="
+                    src/img/nat-20.jpg       300w,
+                    src/img/nat-20-large.jpg 750w
+                  "
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 20"
+                  class="introduce__box__pic"
+                  src="src/img/nat-20-large.jpg"
+          />
+        </div>
+        <div class="slide">
+          <img
+                  srcset="
+                    src/img/nat-12.jpg       300w,
+                    src/img/nat-12-large.jpg 750w
+                  "
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 12"
+                  class="introduce__box__pic"
+                  src="src/img/nat-12-large.jpg"
+          />
+        </div>
+
+        <button class="slider__btn slider__btn--left">
+          <svg class="slider__icon" viewBox="0 0 32 32">
+            <use href="#icon-circle-left"></use>
+          </svg>
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <svg class="slider__icon" viewBox="0 0 32 32">
+            <use href="#icon-circle-right"></use>
+          </svg>
+        </button>
+        <div class="dots"></div>
+      </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Yoga With Viona</span>
@@ -183,9 +233,9 @@
         </h1>
 
         <a
-          href="#section-about"
-          class="btn btn--white btn--animated toSectionAbout"
-          >Discover our tours</a
+                href="#section-about"
+                class="btn btn--white btn--animated toSectionAbout"
+        >Discover our tours</a
         >
       </div>
     </header>
@@ -948,5 +998,8 @@
         </div>
       </div>
     </div>
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
   </body>
 </html>
