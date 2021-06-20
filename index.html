@@ -10,7 +10,7 @@
     />
 
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="src/img/new/icon.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -141,38 +141,41 @@
           <a class="nav_link" href="#section-practice">Practice</a>
         </li>
         <li class="nav_item">
-          <a class="nav_link" href="#section-practice">Viona</a>
+          <a class="nav_link" href="#section-practice">Dudu Foundation</a>
         </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#section-event">Start Now</a>
-        </li>
-        <li class="nav_item">
-          <input
-            type="checkbox"
-            class="classes__checkbox"
-            id="classes-toggle"
-          />
-          <label for="classes-toggle" class="nav_link nav_link-btn"
-            >Classes</label
-          >
-          <ul class="menu__class">
-            <li class="nav_item">
-              <a class="nav_link" href="#section-courses">Courses</a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#section-schedule">Schedule</a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#section-members">Membership</a>
-            </li>
-            <li class="nav_item">
-              <a class="nav_link" href="#section-location">location</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav_item">
-          <a class="nav_link" href="#section-form ">Contact Us</a>
-        </li>
+<!--        <li class="nav_item">-->
+<!--          <a class="nav_link" href="#section-practice">Viona</a>-->
+<!--        </li>-->
+<!--        <li class="nav_item">-->
+<!--          <a class="nav_link" href="#section-event">Start Now</a>-->
+<!--        </li>-->
+<!--        <li class="nav_item">-->
+<!--          <input-->
+<!--            type="checkbox"-->
+<!--            class="classes__checkbox"-->
+<!--            id="classes-toggle"-->
+<!--          />-->
+<!--          <label for="classes-toggle" class="nav_link nav_link-btn"-->
+<!--            >Classes</label-->
+<!--          >-->
+<!--          <ul class="menu__class">-->
+<!--            <li class="nav_item">-->
+<!--              <a class="nav_link" href="#section-courses">Courses</a>-->
+<!--            </li>-->
+<!--            <li class="nav_item">-->
+<!--              <a class="nav_link" href="#section-schedule">Schedule</a>-->
+<!--            </li>-->
+<!--            <li class="nav_item">-->
+<!--              <a class="nav_link" href="#section-members">Membership</a>-->
+<!--            </li>-->
+<!--            <li class="nav_item">-->
+<!--              <a class="nav_link" href="#section-location">location</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li class="nav_item">-->
+<!--          <a class="nav_link" href="#section-form ">Contact Us</a>-->
+<!--        </li>-->
       </ul>
     </nav>
     <header class="header">
@@ -188,6 +191,19 @@
                   class="introduce__box__pic"
                   src="src/img/new/banner1_large.jpg"
           />
+          <div class="header__text-box">
+            <h1 class="heading-primary">
+              <span class="heading-primary--main">“Yoga Citta Vritti Nirodaha”</span>
+              <span class="heading-primary--main" style="font-weight: bold">Yoga is a state of mind with no disturbances.</span>
+              <span class="heading-primary--sub">– PATANJALI, YOGA SUTRAS</span>
+            </h1>
+          </div>
+          <div class="header__text-box" style="top: 80%">
+            <a
+                    href="#section-about"
+                    class="btn btn--white btn--animated toSectionAbout"
+            >Discover the Journey</a>
+          </div>
         </div>
         <div class="slide">
           <img
@@ -200,18 +216,29 @@
                   class="introduce__box__pic"
                   src="src/img/new/banner2_large.jpg"
           />
+          <div class="header__text-box" style="top: 80%">
+            <h1 class="heading-primary">
+              <span class="heading-primary--main" style="font-weight: bold;letter-spacing: 10px; font-size: 22px; line-height: 30px">“Yoga is an inner-work, a self-discovery journey that leads you to find your ultimate happiness, unlock your potentials and live your life to the maximum.”</span>
+              <span class="heading-primary--sub" style="margin-top: 20px">– Viona</span>
+            </h1>
+          </div>
         </div>
         <div class="slide">
           <img
                   srcset="
-                    src/img/new/banner3_large.jpg       300w,
-                    src/img/new/banner3_large.jpg 750w
+                    src/img/new/banner3_large.png       300w,
+                    src/img/new/banner3_large.png 750w
                   "
                   sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                   alt="Photo 12"
                   class="introduce__box__pic"
-                  src="src/img/new/banner3_large.jpg"
+                  src="src/img/new/banner3_large.png"
           />
+          <div class="header__text-box" style="top: 30%">
+            <h1 class="heading-primary">
+              <span class="heading-primary--main" style="font-weight: bold">Let’s build a harmonious community together! </span>
+            </h1>
+          </div>
         </div>
 
         <button class="slider__btn slider__btn--left">
@@ -225,18 +252,6 @@
           </svg>
         </button>
         <div class="dots"></div>
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Yoga With Viona</span>
-          <span class="heading-primary--sub">To meet a happier you</span>
-        </h1>
-
-        <a
-                href="#section-about"
-                class="btn btn--white btn--animated toSectionAbout"
-        >Discover our tours</a
-        >
       </div>
     </header>
     <main>
@@ -274,16 +289,16 @@
           <div class="col-1-of-2">
 <!--            <div class="slider">-->
 <!--              <div class="slide">-->
-<!--                <img-->
-<!--                  srcset="-->
-<!--                    src/img/nat-17.jpg       300w,-->
-<!--                    src/img/nat-17-large.jpg 750w-->
-<!--                  "-->
-<!--                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"-->
-<!--                  alt="Photo 17"-->
-<!--                  class="introduce__box__pic"-->
-<!--                  src="src/img/nat-17-large.jpg"-->
-<!--                />-->
+                <img
+                  srcset="
+                    src/img/nat-17.jpg       300w,
+                    src/img/nat-17-large.jpg 750w
+                  "
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 17"
+                  class="introduce__box__pic"
+                  src="src/img/nat-17-large.jpg"
+                />
 <!--              </div>-->
 
 <!--              <div class="slide">-->
