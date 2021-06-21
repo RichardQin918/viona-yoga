@@ -1,5 +1,5 @@
 'use strict';
-let logo = 'src/img/new/icon.png';
+let logo = 'favicon.8076570f.png';
 
 const nav = document.querySelector('.header__navigation');
 const sliders = function () {
