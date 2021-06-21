@@ -1,5 +1,5 @@
 'use strict';
-let logo = 'favicon.8076570f.png';
+let logo = 'src/img/new/icon.png';
 
 const nav = document.querySelector('.header__navigation');
 const sliders = function () {
@@ -175,7 +175,7 @@ const toggleClassCheckbox = function () {
   });
 };
 const loadMap = function () {
-  const map = L.map('map').setView([13.7285349, 100.5335829], 17);
+  const map = L.map('map').setView([13.736628848016586, 100.55726411236822], 17);
 
   L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
     attribution:

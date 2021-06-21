@@ -111,6 +111,7 @@
   }
 }
 .subscribe {
+  width: 100%;
   background-image: linear-gradient(
       105deg,
       rgba($color-white, 0.9) 0%,
@@ -130,7 +131,7 @@
         transparent 65%
       ),
       url(../img/nat-5.jpg);
-    background-size: cover;
+    background-size: cover, contain;
   }
 
   @include respond(tab-port) {
