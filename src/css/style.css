@@ -1195,7 +1195,7 @@ body {
     text-align: center; }
   @media only screen and (max-width: 500px) {
     .header #slider2 {
-      top: 30% !important; } }
+      top: 60% !important; } }
   .header .carousel-image {
     height: auto;
     width: auto;
