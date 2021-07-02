@@ -175,7 +175,7 @@ const toggleClassCheckbox = function () {
   });
 };
 const loadMap = function () {
-  const map = L.map('map').setView([13.736628848016586, 100.55726411236822], 17);
+  const map = L.map('map').setView([13.73644, 100.55719], 17);
 
   L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
     attribution:
