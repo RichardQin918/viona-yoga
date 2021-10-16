@@ -64,15 +64,15 @@ const sliders = function () {
 };
 const navLinkEffect = function () {
   const handleMover = function (event) {
-    if (event.target.classList.contains('nav_link')) {
-      const link = event.target;
-      const siblings = link
-        .closest('.header__navigation')
-        .querySelectorAll('.nav_link');
-      siblings.forEach((l) => {
-        if (l !== link) l.style.opacity = this;
-      });
-    }
+    // if (event.target.classList.contains('nav_link')) {
+    //   const link = event.target;
+    //   const siblings = link
+    //     .closest('.header__navigation')
+    //     .querySelectorAll('.nav_link');
+    //   siblings.forEach((l) => {
+    //     if (l !== link) l.style.opacity = this;
+    //   });
+    // }
   };
   nav.addEventListener('mouseover', handleMover.bind(0.5));
   nav.addEventListener('mouseout', handleMover.bind(1));
@@ -175,8 +175,7 @@ const toggleClassCheckbox = function () {
   });
 };
 const loadMap = function () {
-  const map = L.map('map').setView([13.73644, 100.55719], 17);
-
+  const map = L.map('map').setView([13.7375447, 100.5565534], 17);
   L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -188,7 +187,7 @@ const loadMap = function () {
     iconAnchor: [25, 50], // point of the icon which will correspond to marker's location
     popupAnchor: [0, -50], // point from which the popup should open relative to the iconAnchor
   });
-  L.marker([13.7285349, 100.5335829], { icon: viyogaIcon })
+  L.marker([13.7375447, 100.5565534], { icon: viyogaIcon })
     .addTo(map)
     .bindPopup('VIONA YOGA')
     .openPopup();
@@ -251,9 +250,9 @@ const closeModal = function () {
 
 toggleClassCheckbox();
 navLinkEffect();
-stickyNavBar();
+// stickyNavBar();
 scrollToEffect();
-sliders();
+// sliders();
 fadeIn();
 loadMap();
 closeModal();

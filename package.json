@@ -25,6 +25,7 @@
     "postcss": "^8.3.0"
   },
   "dependencies": {
+    "imagemin-cli": "^7.0.0",
     "leaflet": "^1.7.1",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.3.0"
