@@ -98,12 +98,12 @@ const scrollToEffect = function () {
   const sectionAbout = document.querySelector('#section-about');
   const sectionPractice = document.querySelector('#section-practice');
   const sectionCourses = document.querySelector('#section-courses');
-  document
-    .querySelector('.toSectionAbout')
-    .addEventListener('click', function (event) {
-      event.preventDefault();
-      sectionAbout.scrollIntoView({ behavior: 'smooth' });
-    });
+  // document
+  //   .querySelector('.toSectionAbout')
+  //   .addEventListener('click', function (event) {
+  //     event.preventDefault();
+  //     sectionAbout.scrollIntoView({ behavior: 'smooth' });
+  //   });
   document
     .querySelector('.toSectionCourses')
     .addEventListener('click', function (event) {
@@ -111,17 +111,17 @@ const scrollToEffect = function () {
       sectionCourses.scrollIntoView({ behavior: 'smooth' });
     });
 
-  const scrollSmooth = function (event) {
-    event.preventDefault();
-    const id = event.target.getAttribute('href');
-    //document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    const coords = document.querySelector(id).getBoundingClientRect();
-    window: scrollTo({
-      left: coords.left + window.pageXOffset,
-      top: coords.top + window.pageYOffset,
-      behavior: 'smooth',
-    });
-  };
+  // const scrollSmooth = function (event) {
+  //   event.preventDefault();
+  //   const id = event.target.getAttribute('href');
+  //   //document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  //   const coords = document.querySelector(id).getBoundingClientRect();
+  //   window: scrollTo({
+  //     left: coords.left + window.pageXOffset,
+  //     top: coords.top + window.pageYOffset,
+  //     behavior: 'smooth',
+  //   });
+  // };
   document
     .querySelector('.navigation__list')
     .addEventListener('click', function (event) {
