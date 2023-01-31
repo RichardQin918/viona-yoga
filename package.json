@@ -14,7 +14,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "build": "parcel build index.html --dist-dir ./dist --public-url ./"
   },
-  "author": "Pei-Yi Lin",
+  "author": "Richard Qin",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.5",

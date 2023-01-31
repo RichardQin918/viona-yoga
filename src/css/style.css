@@ -96,6 +96,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    padding-bottom: 45px;
     /*
       animation-delay: 3s;
       animation-iteration-count: 3;
@@ -139,7 +140,11 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.8rem; }
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 200%;
+}
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -266,6 +271,10 @@ body {
   transform: skewX(-5deg); }
   @media only screen and (max-width: 37.5em) {
     .practice {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 3rem;
       width: 100%;
       transform: skewX(0);
@@ -290,7 +299,7 @@ body {
         border-radius: none; } }
     @media only screen and (max-width: 37.5em) {
       .practice__shape {
-        width: 100%;
+        width: 30%;
         height: auto;
         -webkit-shape-outside: none;
         shape-outside: none;
@@ -305,7 +314,9 @@ body {
     transform: skewX(5deg); }
     @media only screen and (max-width: 37.5em) {
       .practice__text {
-        transform: skewX(0); } }
+        transform: skewX(0);
+        text-align: center;
+      } }
     .practice__text h3 {
       margin-top: 1rem;
       font-size: 2rem;
@@ -315,7 +326,7 @@ body {
       margin-bottom: 2rem;
       color: #b0cac4; }
     .practice__text--p2 {
-      color: #333; }
+      color: #b0cac4; }
   .practice__caption {
     position: absolute;
     bottom: 0;
@@ -808,7 +819,7 @@ body {
   background-color: #f7f7f7; }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 8rem; }
   @media only screen and (max-width: 37.5em) {
     .form__group:not(:last-child) {
       margin-bottom: 0; } }
@@ -973,6 +984,8 @@ body {
     width: 100%; }
 
 .btn, .btn:link, .btn:visited {
+  letter-spacing: 1px;
+  word-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -1034,7 +1047,10 @@ body {
   cursor: pointer;
   position: relative; }
   .btn-text, .btn-text:link, .btn-text:visited {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 200%;
     color: #7ba79d;
     display: inline-block;
     text-decoration: none;
@@ -1208,7 +1224,7 @@ body {
     text-align: center; }
 
 .header__navigation {
-  background-color: rgba(176, 202, 196, 0.8);
+  background-color: transparent;
   position: absolute;
   width: 100%;
   display: flex;
@@ -1233,7 +1249,7 @@ body {
       backdrop-filter: blur(5px);
       background-color: rgba(176, 202, 196, 0.9); }
   .header__navigation .header__logo {
-    height: 4.75rem;
+    height: 6.75rem;
     transition: all 0.3s; }
   .header__navigation .menu {
     position: relative;
@@ -1271,6 +1287,8 @@ body {
         height: fit-content;
         opacity: 1; }
     .header__navigation .menu .nav_item .nav_link, .header__navigation .menu .nav_item .nav_link:link, .header__navigation .menu .nav_item .nav_link:visited {
+      letter-spacing: 1px;
+      word-spacing: 3px;
       padding: 1rem 0 0.7rem 0;
       color: inherit;
       text-decoration: none;
@@ -1327,6 +1345,9 @@ body {
   padding: 3.5rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  .footer-icons {
+    width: 25px;
+  }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 1rem; }
@@ -1377,12 +1398,20 @@ body {
   z-index: 0; }
   @media only screen and (max-width: 37.5em) {
     .section-about {
-      margin-top: -15vh; } }
+      margin-top: -15vh;
+    }
+    .section-about .row .col-1-of-2 {
+      justify-content: center;
+      display: flex;
+    }
+  }
   .section-about .about-content {
     padding-left: 5rem; }
     @media only screen and (max-width: 37.5em) {
       .section-about .about-content {
-        padding: 0 0 3rem 0; } }
+        padding: 0 0 3rem 0;
+        text-align:center;
+      } }
 
 .section-practice {
   padding: 8rem 0;
@@ -1449,7 +1478,8 @@ body {
 
 .section-form {
   padding: 10rem;
-  background-image: linear-gradient(to right bottom, rgba(176, 202, 196, 0.8), rgba(58, 87, 80, 0.8)); }
+  background-image: linear-gradient(to right bottom, rgba(176, 202, 196, 0.8), rgba(58, 87, 80, 0.8));
+}
   @media only screen and (max-width: 75em) {
     .section-form {
       padding: 10rem; } }
@@ -1463,6 +1493,7 @@ body {
 .subscribe {
   width: 100%;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-5.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   border-radius: 3px;
@@ -1470,10 +1501,14 @@ body {
   @media only screen and (max-width: 75em) {
     .subscribe {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-5.jpg);
-      background-size: cover, contain; } }
+      background-repeat: no-repeat;
+      background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .subscribe {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-5.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    } }
   .subscribe__form {
     width: 50%;
     padding: 6rem; }
